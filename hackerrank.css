@@ -55,3 +55,14 @@ h1 a
   text-decoration: none;
   color: green;
 }
+.colorchange{
+  animation: colorchange 1s infinite;
+}
+@keyframes colorchange {
+  0%{color:red;}
+  20%{color:green;}
+  40%{color:white;}
+  60%{color:green;}
+  80%{color:orange;}
+  100%{color:green;}
+}
