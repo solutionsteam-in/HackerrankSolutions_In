@@ -92,11 +92,33 @@ HackerRank--Viral Advertising--Solution">    <meta name="description" content="H
   </head>
 
   <body>
-    <section>
-      <h1>SolutionsTeam</h1>
-      <p> Hackerrank Solutions in-<a href="hackerrank.html">C-</a><a href="hackerrank.html">C++-</a><a href="hackerrank.html">Java-</a><a href="hackerrank.html">Python</a></p>
-      <img src="solutions.jpeg" alt="Solutions">
-    </section>
-    <div style="background-image: url('background.jpeg');">
+    <section class="one">
+      <div class="main-content-header">
+         <h1><span class="colorchange">Coursera Solutions<span></h1>
+         <h3>Perfect solution for a Problem</h3>
+      </div>
+      <div class="row">
+        <ul class="main-nav"  id="check-class">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="hackerrank.html">C</a></li>
+          <li><a href="hackerrank.html">C++</a></li>
+          <li><a href="hackerrank.html">Java</a></li>
+          <li><a href="hackerrank.html">Python</a></li>
+        </ul>
+        <a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+      </div>
+</section>
+<script type="text/javascript">
+function slideshow() {
+  var x =document.getElementById('check-class')
+  if(x.style.display === "none"){
+    x.style.display = "block";
+  }
+  else{
+    x.style.display = "none";
+  }
+}
+
+</script>
   </body>
 </html>
