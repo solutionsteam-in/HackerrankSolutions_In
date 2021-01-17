@@ -97,8 +97,8 @@ h1{
 }
 @media only screen and (max-width:550px){
   .one{
-    margin-top: 5%;
-    padding-bottom: 50%;
+    margin-top: 7%;
+    padding-bottom: 55%;
   }
 
   h1{font-size: 150%;}
@@ -118,8 +118,8 @@ h1{
 }
 @media only screen and (max-width:350px){
   .one{
-    margin-top: 5%;
-    padding-bottom: 50%;
+    margin-top: 7%;
+    padding-bottom: 55%;
   }
    h1{font-size: 130%;}
   h2{font-size: 90%;}
