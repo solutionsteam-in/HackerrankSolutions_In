@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="keywords" content="solutionsteam,solutions,hackerrank,hackerranksolutions,C++,Java,C,Python,Graduating">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hackerrank Solutions in C, C++, Java, Python">
+    <meta charset="utf-8">
+    <title>3D Surface Area</title>
+    <link rel="stylesheet" href="common.css">
+  </head>
+  <body>
+    <div class="box1">
+      <h2>For All Hackerrank Solutions<a href="hackerrank.html">Visit Homepage</a></h2>
+      <h2>Solution:</h2>
+
+      <h3>C++:</h3>
+      <pre>
+      #include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+long long int N,c;
+cin>>N;
+long long int a = 2,p;
+long long int b = 3;
+if (N == 1)
+{
+	cout<<"2"<<endl;
+	cout<<"1/2";
+}
+else if(N == 2)
+{
+	return b;
+}
+else
+{
+	for(long long int i = 3; i <= N; i++)
+	{
+	c = a + b;
+	a = b;
+	b = c;
+	}
+	cout<<b<<endl;
+	cout<<b-a<<"/"<<b;
+}
+}
+
+
+</pre>
+<h2>For All Hackerrank Solutions<a href="hackerrank.html">Visit Homepage</a></h2>
+
+  <h3>C:</h3>
+<pre>
+#include <stdio.h>
+int main()
+{
+long long int N,c;
+scanf("%llu",&N);
+long long int a = 2,p;
+long long int b = 3;
+if (N == 1)
+{
+	printf("2\n");
+	printf("1/2");
+}
+else if(N == 2)
+{
+	return b;
+}
+else
+{
+	for(long long int i = 3; i <= N; i++)
+	{
+	c = a + b;
+	a = b;
+	b = c;
+	}
+	printf("%lld\n",b);
+	printf("%lld/%lld",b-a,b);
+}
+}
+
+
+</pre>
+<h2>For All Hackerrank Solutions<a href="hackerrank.html">Visit Homepage</a></h2>
+
+      <h3>Python:</h3>
+<pre>
+ Will Update soon
+</pre>
+    </div>
+  </body>
+</html>
