@@ -14,12 +14,9 @@
       <h2>Solution:</h2>
 <h3>C++:</h3>
 <pre>
-  #include <iostream>
-#include <array>
 using namespace std;
-
 int main() {
-    array<array<int, 3>, 3> magic[] = {
+    array&ltarray&ltint, 3&gt, 3&gt magic[] = {
         {{{6, 7, 2}, {1, 5, 9}, {8, 3, 4}}},
         {{{2, 9, 4}, {7, 5, 3}, {6, 1, 8}}},
         {{{6, 1, 8}, {7, 5, 3}, {2, 9, 4}}},
@@ -29,23 +26,23 @@ int main() {
         {{{8, 3, 4}, {1, 5, 9}, {6, 7, 2}}},
         {{{4, 9, 2}, {3, 5, 7}, {8, 1, 6}}},
     };
-    array< array< int, 3>, 3> s;
-    for(auto i = 0; i < 3; i++) {
-        for(auto j = 0; j < 3; j++) {
-            cin >> s[i][j];
+    array&lt array&lt int, 3&gt, 3&gt s;
+    for(auto i = 0; i &lt 3; i++) {
+        for(auto j = 0; j &lt 3; j++) {
+            cin &gt&gt s[i][j];
         }
     }
     int result = 81;
-    for(auto i = 0; i < 8; i++) {
+    for(auto i = 0; i &lt 8; i++) {
         int current = 0;
-        for(auto j = 0; j < 3; j++) {
-            for(auto k = 0; k < 3; k++) {
+        for(auto j = 0; j &lt 3; j++) {
+            for(auto k = 0; k &lt 3; k++) {
                 current += abs(s[j][k] - magic[i][j][k]);
             }
         }
         result = min(result, current);
     }
-    cout << result;
+    cout &lt&lt result;
     return 0;
 }
   </pre>
